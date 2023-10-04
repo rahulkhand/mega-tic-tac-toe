@@ -22,7 +22,7 @@ Here is an example of a legal board state with examples of regular markers and b
 Rules:
 1. The X player goes first. The O player goes second. Both players alternate moves
 2. Each valid play consists of placing an X or O in one empty section of one of the nine inner-tac-tac-toe grids when it is not covered.
-3. The difference of the number of empty sections on any two inner grids that are not covered must always be one or zero.
+3. The absolute difference of the number of empty sections on any two inner grids that are not covered must always be one or zero.
 4. When a player plays a move, the section of the inner grid they played in is considered no longer empty
 5. Every string must incorporate a move played in each inner grid that is not covered before the aforementioned move is played.
 6. For every string, if the board were to be cleared of all moves except for those from the respective string
