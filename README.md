@@ -16,8 +16,9 @@ Here is an example of a legal board state with examples of regular markers and b
 * A **big marker** denotes that no more moves can be played in the inner grid that is being **covered**. 
    Essentially the player has captured that cell of the outer grid.
 * A **string** is a continuous sequence of moves such that the first string starts at the first move of the game,
-   and every string thereafter starts on the move after the last move of another string. The first string of the
-   game will have nine moves in it. When a big marker is placed on the board, the length of every string started thereafter decreases by one.
+   and every string thereafter starts on the move after the last move of another string.
+* The first string of the game will have nine moves in it, or a **length** of nine. When a big marker is placed on the board, the length
+  of every string started thereafter decreases by one.
 
 Rules:
 1. The X player goes first. The O player goes second. Both players alternate moves
@@ -30,5 +31,5 @@ Rules:
 7. When a player has a horizontal, vertical, or diagonal straight of three of their markers within an inner grid, they must immediately
    place a big marker over the inner grid that contains their straight, filling in the entire cell of the outer grid.
 8. If no legal moves exist for a player, they may ignore rule _6_ but still must adhere to rule _5_. In this case only, the move still counts
-   towards the nine moves of its string, and the string is permitted to be abnormal where it will not abide by rule _6_.
+   towards the length of its string, and the string is permitted to be abnormal where it will not abide by rule _6_.
 9. The first player who can create a horizontal, vertical, or diagonal straight of three of their big markers within the outer grid wins
